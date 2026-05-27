@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Navbar from './components/Navbar'; // 1. Navbar එක Import කරගන්න
 import TechStack from './components/TechStack';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
@@ -7,6 +8,9 @@ export default function App() {
   return (
     <div className="relative min-h-screen bg-slate-950 text-slate-100 overflow-x-hidden selection:bg-blue-500 selection:text-slate-900">
       
+      {/* Navbar එක මෙතනට දාමු */}
+      <Navbar />
+
       {/* 🔮 Background Real Animation */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
         <motion.div 
@@ -22,7 +26,7 @@ export default function App() {
       </div>
 
       {/* 🚀 1. Hero Section */}
-      <div className="relative min-h-screen flex flex-col justify-center items-center px-4 text-center z-10">
+      <div className="relative min-h-screen flex flex-col justify-center items-center px-4 text-center z-10 pt-20">
         <motion.h1 
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -42,27 +46,22 @@ export default function App() {
           Seamless <span className="text-purple-400 font-semibold">Mobile Apps</span>, and 
           High-End <span className="text-indigo-400 font-semibold">UI/UX Designs</span>.
         </motion.p>
-
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 1, duration: 0.5 }}
-          className="mt-10 flex flex-wrap justify-center gap-4"
-        >
-          <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl font-medium shadow-lg shadow-indigo-500/20">
-            Explore My Work
-          </button>
-        </motion.div>
       </div>
 
-      {/* 🛠️ 2. Tech Stack Section */}
-      <TechStack />
+      {/* 🛠️ 2. Tech Stack Section - id එකක් දාන්න */}
+      <div id="techstack">
+        <TechStack />
+      </div>
 
-      {/* 🎨 3. Projects Section */}
-      <Projects />
+      {/* 🎨 3. Projects Section - id එකක් දාන්න */}
+      <div id="projects">
+        <Projects />
+      </div>
 
-      {/* 💬 4. Contact Section */}
-      <Contact />
+      {/* 💬 4. Contact Section - id එකක් දාන්න */}
+      <div id="contact">
+        <Contact />
+      </div>
 
     </div>
   );
