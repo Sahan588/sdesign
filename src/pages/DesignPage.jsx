@@ -44,7 +44,7 @@ import poster_6 from '../assets/designs/poster/poster_6.jpg';
 import poster_7 from '../assets/designs/poster/poster_7.jpg';
 import poster_8 from '../assets/designs/poster/poster_8.jpg';
 import poster_9 from '../assets/designs/poster/poster_9.jpeg';
-import poster_10 from '../assets/designs/poster/poster_10.png';
+import poster_10 from '../assets/designs/poster/poster_10.jpg';
 
 export default function DesignPage() {
   const [filter, setFilter] = useState("All");
