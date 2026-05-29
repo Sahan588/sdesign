@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import profilePic from '../assets/profile.png';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -82,8 +83,10 @@ export default function Home() {
           <span>UI/UX Design</span> • <span>Mobile App Development</span> • <span>Graphic Design</span> • 
           <span>WordPress Web Development</span> • <span>SEO Optimization</span>
         </motion.div>
+           <Footer />
       </div>
-
+     
     </div>
+    
   );
 }

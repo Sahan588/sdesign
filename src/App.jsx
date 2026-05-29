@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import AppsPage from './pages/AppsPage';
 import DesignPage from './pages/DesignPage';
 import Contact from './pages/Contact'; // Contact page එක import කරන්න
+import BlogPage from './pages/BlogPage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/apps" element={<AppsPage />} />
         <Route path="/design" element={<DesignPage />} />
         <Route path="/contact" element={<Contact />} /> {/* මෙන්න මේ Route එක තියෙන්න ඕනේ */}
+        <Route path="/blogs" element={<BlogPage />} />
       </Routes>
     </BrowserRouter>
   );
